@@ -7,6 +7,7 @@ const questions = ["What is this app is for?", "How do users use the app?", "How
 
 // TODO: Create a function to write README file
 function writeToFile(fileName, data) {
+    // make a file from input 
     fs.writeFile(fileName, data, function (err) {
         console.log(err)
     }
@@ -14,8 +15,14 @@ function writeToFile(fileName, data) {
 }
 
 // TODO: Create a function to initialize app
-function init() { 
-    inq.prompt([questions]).then((response) => {});
+function init() {
+    // inquirer var prompt then get response
+    inq
+        .prompt([questions])
+        .then((response) => {
+            let input = { ...response };
+            console.log(input);
+        });
 }
 
 // Function call to initialize app
