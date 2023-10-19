@@ -14,9 +14,12 @@ function renderLicenseSection(license) { }
 function generateMarkdown(data) {
     // destruc response obj
     const { title: dataTitle, purpose: dataPurpose, use: dataUse, install: dataInstall, report: dataReport, contribute: dataContribute } = data;
+
+    // return string of data for readme
     return `# ${dataTitle}
 
 `;
 }
 
+// export module
 module.exports = generateMarkdown;

@@ -1,10 +1,12 @@
+// import module
+import generateMarkdown from "./utils/generateMarkdown";
+
 // TODO: Include packages needed for this application
 const inq = require("inquirer");
 const fs = require("fs");
-const { generate } = require("rxjs");
 
 // TODO: Create an array of questions for user input
-const questions = ["What is this app is for?", "How do users use the app?", "How do users install it?", "How can users report issues?", "How can other devs make contributions?"];
+const questions = ["What is the title of your app", "What is this app is for?", "How do users use the app?", "How do users install it?", "How can users report issues?", "How can other devs make contributions?"];
 
 // TODO: Create a function to write README file
 function writeToFile(fileName, data) {
@@ -23,26 +25,31 @@ function init() {
             {
                 type: 'input',
                 message: questions[0],
-                name: 'purpose',
+                name: 'title',
             },
             {
                 type: 'input',
                 message: questions[1],
-                name: 'use',
+                name: 'purpose',
             },
             {
                 type: 'input',
                 message: questions[2],
-                name: 'install',
+                name: 'use',
             },
             {
                 type: 'input',
                 message: questions[3],
-                name: 'report',
+                name: 'install',
             },
             {
                 type: 'input',
                 message: questions[4],
+                name: 'report',
+            },
+            {
+                type: 'input',
+                message: questions[5],
                 name: 'contribute',
             }
         ])
