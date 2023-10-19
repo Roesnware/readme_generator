@@ -14,7 +14,9 @@ function writeToFile(fileName, data) {
 }
 
 // TODO: Create a function to initialize app
-function init() {}
+function init() { 
+    inq.prompt([questions]).then((response) => {});
+}
 
 // Function call to initialize app
 init();
