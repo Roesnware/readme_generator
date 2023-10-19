@@ -18,7 +18,33 @@ function writeToFile(fileName, data) {
 function init() {
     // inquirer var prompt then get response
     inq
-        .prompt([questions])
+        .prompt([
+            {
+                type: 'input',
+                message: 'What is your name?',
+                name: 'name',
+            },
+            {
+                type: 'input',
+                message: 'What is your location?',
+                name: 'location',
+            },
+            {
+                type: 'input',
+                message: 'What is your bio?',
+                name: 'bio',
+            },
+            {
+                type: 'input',
+                message: 'What is your linkedIn URL?',
+                name: 'linkedIn',
+            },
+            {
+                type: 'input',
+                message: questions[],
+                name: 'github',
+            }
+        ])
         .then((response) => {
             let input = { ...response };
             console.log(input);
