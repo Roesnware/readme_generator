@@ -46,8 +46,15 @@ function init() {
             }
         ])
         .then((response) => {
+            // spread repsonse to obj 
             let input = { ...response };
-            console.log(input);
+            //console.log(input);
+
+            // destruc response obj
+            const {purpose: dataPurpose, use: dataUse, install: dataInstall, report: dataReport, contribute: dataContribute} = input;
+
+            //debug
+            console.log(dataPurpose, dataUse, dataInstall, dataReport, dataContribute);
         });
 }
 
