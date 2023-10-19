@@ -6,7 +6,7 @@ const inq = require("inquirer");
 const fs = require("fs");
 
 // TODO: Create an array of questions for user input
-const questions = ["What is the title of your app", "What is this app is for?", "How do users use the app?", "How do users install it?", "How can users report issues?", "How can other devs make contributions?"];
+const questions = ["What is the title of your app", "Project pitch:", "What is this app is for?", "What did you learn in this project?", "How do users use the app?", "How do users install it?", "How can users report issues?", "How can other devs make contributions?"];
 
 // TODO: Create a function to write README file
 function writeToFile(fileName, data) {
@@ -29,27 +29,37 @@ function init() {
             },
             {
                 type: 'input',
-                message: questions[1],
-                name: 'purpose',
-            },
-            {
-                type: 'input',
                 message: questions[2],
-                name: 'use',
+                name: 'pitch',
             },
             {
                 type: 'input',
                 message: questions[3],
-                name: 'install',
+                name: 'purpose',
             },
             {
                 type: 'input',
                 message: questions[4],
-                name: 'report',
+                name: 'learn',
             },
             {
                 type: 'input',
                 message: questions[5],
+                name: 'use',
+            },
+            {
+                type: 'input',
+                message: questions[6],
+                name: 'install',
+            },
+            {
+                type: 'input',
+                message: questions[7],
+                name: 'report',
+            },
+            {
+                type: 'input',
+                message: questions[8],
                 name: 'contribute',
             }
         ])
