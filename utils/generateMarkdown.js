@@ -1,27 +1,28 @@
 // TODO: Create a function that returns a license badge based on which license is passed in
 // If there is no license, return an empty string
-function renderLicenseBadge(license) { 
+function renderLicenseBadge(license) {
 
     // check if license null
-    if(!license) {
+    if (!license) {
         return "";
     } else {
-        // returns a license badge based on which license is passed in
 
+        // returns a license badge based on which license is passed in
+        console.log("badge");
     }
 }
 
 // TODO: Create a function that returns the license link
 // If there is no license, return an empty string
-function renderLicenseLink(license) { 
+function renderLicenseLink(license) {
 
     // check if license null
-    if(!license) {
+    if (!license) {
         return "";
     } else {
 
         // returns the license link
-        
+        console.log("link");
     }
 }
 
@@ -30,20 +31,35 @@ function renderLicenseLink(license) {
 function renderLicenseSection(license) {
 
     // check if license null
-    if(!license) {
+    if (!license) {
         return "";
     } else {
 
         // returns the license section of README
-        renderLicenseLink(license);
-        renderLicenseBadge(license);
+        let link = renderLicenseLink(license);
+        let badge = renderLicenseBadge(license);
+
+        console.log(link);
+        console.log(badge);
     }
- }
+}
 
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
     // destruc response obj
-    const { title: dataTitle, purpose: dataPurpose, use: dataUse, install: dataInstall, report: dataReport, contribute: dataContribute, pitch: dataPitch, learn: dataLearn} = data;
+    const { 
+        title: dataTitle,
+        pitch: dataPitch,
+        purpose: dataPurpose,
+        learn: dataLearn,
+        use: dataUse,
+        install: dataInstall,
+        report: dataReport,
+        contribute: dataContribute,
+        license: dataLicense
+        } = data;
+
+    const lic = renderLicenseSection(dataLicense);
 
     // return string of data for readme
     return `# ${dataTitle}
@@ -68,7 +84,7 @@ function generateMarkdown(data) {
     
     ## License
     
-    The last section of a high-quality README file is the license. This lets other developers know what they can and cannot do with your project. If you need help choosing a license, refer to [https://choosealicense.com/](https://choosealicense.com/).
+    ${lic}
     
     ## How to Contribute
     
