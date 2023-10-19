@@ -1,4 +1,7 @@
 // TODO: Create a function that returns a license badge based on which license is passed in
+
+const { link } = require("fs");
+
 // If there is no license, return an empty string
 function renderLicenseBadge(license) {
 
@@ -34,15 +37,9 @@ function renderLicenseSection(license) {
     if (!license) {
         return "";
     } else {
-
-        // returns the license section of README
-        let link = renderLicenseLink(license);
         let badge = renderLicenseBadge(license);
-
-        console.log(link);
-        console.log(badge);
-
-        return link + badge;
+        let link = renderLicenseLink(license);
+        return `${badge} : ${link}`;
     }
 }
 
@@ -57,11 +54,10 @@ function generateMarkdown(data) {
         use: dataUse,
         install: dataInstall,
         report: dataReport,
-        contribute: dataContribute,
-        license: dataLicense
+        contribute: dataContribute
         } = data;
 
-    let lic = renderLicenseSection(dataLicense);
+    let lic = renderLicenseSection(license);
 
     // return string of data for readme
     return `# ${dataTitle}
