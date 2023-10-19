@@ -1,6 +1,7 @@
 // TODO: Include packages needed for this application
 const inq = require("inquirer");
 const fs = require("fs");
+const { generate } = require("rxjs");
 
 // TODO: Create an array of questions for user input
 const questions = ["What is this app is for?", "How do users use the app?", "How do users install it?", "How can users report issues?", "How can other devs make contributions?"];
@@ -50,11 +51,8 @@ function init() {
             let input = { ...response };
             //console.log(input);
 
-            // destruc response obj
-            const {purpose: dataPurpose, use: dataUse, install: dataInstall, report: dataReport, contribute: dataContribute} = input;
-
-            //debug
-            //console.log(dataPurpose, dataUse, dataInstall, dataReport, dataContribute);
+            // build data
+            let data = generateMarkdown(input);
 
             // call write func
             writeToFile("README.md", data);
