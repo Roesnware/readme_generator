@@ -21,28 +21,28 @@ function init() {
         .prompt([
             {
                 type: 'input',
-                message: 'What is your name?',
-                name: 'name',
+                message: questions[0],
+                name: 'purpose',
             },
             {
                 type: 'input',
-                message: 'What is your location?',
-                name: 'location',
+                message: questions[1],
+                name: 'use',
             },
             {
                 type: 'input',
-                message: 'What is your bio?',
-                name: 'bio',
+                message: questions[2],
+                name: 'install',
             },
             {
                 type: 'input',
-                message: 'What is your linkedIn URL?',
-                name: 'linkedIn',
+                message: questions[3],
+                name: 'report',
             },
             {
                 type: 'input',
-                message: questions[],
-                name: 'github',
+                message: questions[4],
+                name: 'contribute',
             }
         ])
         .then((response) => {
