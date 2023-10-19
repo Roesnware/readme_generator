@@ -54,7 +54,10 @@ function init() {
             const {purpose: dataPurpose, use: dataUse, install: dataInstall, report: dataReport, contribute: dataContribute} = input;
 
             //debug
-            console.log(dataPurpose, dataUse, dataInstall, dataReport, dataContribute);
+            //console.log(dataPurpose, dataUse, dataInstall, dataReport, dataContribute);
+
+            // call write func
+            writeToFile("README.md", data);
         });
 }
 
