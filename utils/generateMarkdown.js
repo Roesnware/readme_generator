@@ -41,6 +41,8 @@ function renderLicenseSection(license) {
 
         console.log(link);
         console.log(badge);
+
+        return link + badge;
     }
 }
 
@@ -59,7 +61,7 @@ function generateMarkdown(data) {
         license: dataLicense
         } = data;
 
-    const lic = renderLicenseSection(dataLicense);
+    let lic = renderLicenseSection(dataLicense);
 
     // return string of data for readme
     return `# ${dataTitle}

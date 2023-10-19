@@ -20,7 +20,7 @@
     
     ## License
     
-    undefined
+    NaN
     
     ## How to Contribute
     
