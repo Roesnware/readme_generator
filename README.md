@@ -24,6 +24,6 @@
     
     ## License
     
-    ## How to Contribute
+    ## Contributing
     
     Open source

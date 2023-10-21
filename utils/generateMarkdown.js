@@ -69,7 +69,17 @@ function generateMarkdown(data) {
     ${dataPitch}
     ${dataPurpose}
     ${dataLearn}
-    
+
+    ## Table of Contents
+
+    - [Installation](#installation)
+    - [Usage](#usage)
+    - [Test](#test)
+    - [Report](#report)
+    - [Questions](#questions)
+    - [License](#license)
+    - [Contributing](#contributing)
+
     ## Installation
     
     ${dataInstall}
@@ -78,7 +88,9 @@ function generateMarkdown(data) {
     
     ${dataUse}
 
-    ## Report bugs
+    ## Test 
+
+    ## Report
 
     ${dataReport}
 
@@ -88,7 +100,7 @@ function generateMarkdown(data) {
     
     ## License
     
-    ## How to Contribute
+    ## Contributing
     
     ${dataContribute}
 `;
