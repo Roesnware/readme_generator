@@ -1,7 +1,4 @@
 // TODO: Create a function that returns a license badge based on which license is passed in
-
-const { link } = require("fs");
-
 // If there is no license, return an empty string
 function renderLicenseBadge(license) {
 
@@ -16,32 +13,32 @@ function renderLicenseBadge(license) {
 }
 
 // TODO: Create a function that returns the license link
-// If there is no license, return an empty string
-function renderLicenseLink(license) {
+// // If there is no license, return an empty string
+// function renderLicenseLink(license) {
 
-    // check if license null
-    if (!license) {
-        return "";
-    } else {
+//     // check if license null
+//     if (!license) {
+//         return "";
+//     } else {
 
-        // returns the license link
-        console.log("link");
-    }
-}
+//         // returns the license link
+//         console.log("link");
+//     }
+// }
 
-// TODO: Create a function that returns the license section of README
-// If there is no license, return an empty string
-function renderLicenseSection(license) {
+// // TODO: Create a function that returns the license section of README
+// // If there is no license, return an empty string
+// function renderLicenseSection(license) {
 
-    // check if license null
-    if (!license) {
-        return "";
-    } else {
-        let badge = renderLicenseBadge(license);
-        let link = renderLicenseLink(license);
-        return `${badge} : ${link}`;
-    }
-}
+//     // check if license null
+//     if (!license) {
+//         return "";
+//     } else {
+//         let badge = renderLicenseBadge(license);
+//         let link = renderLicenseLink(license);
+//         return `${badge} : ${link}`;
+//     }
+// }
 
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
@@ -61,14 +58,13 @@ function generateMarkdown(data) {
 
     // return string of data for readme
     return `# ${dataTitle}
-
-    ## Description
+## Description
     
     ${dataPitch}
     ${dataPurpose}
     ${dataLearn}
 
-    ## Table of Contents
+## Table of Contents
 
     - [Usage](#usage)
     - [Installation](#installation)
@@ -78,27 +74,27 @@ function generateMarkdown(data) {
     - [License](#license)
     - [Contributing](#contributing)
 
-    ## Usage
+## Usage
     
     ${dataUse}
 
-    ## Installation
+## Installation
     
     ${dataInstall}
 
-    ## Test 
+## Test 
 
-    ## Report
+## Report
 
     ${dataReport}
 
-    ## Questions
+## Questions
 
     Contact me for any additional questions: Github- ${dataGithub} Email- ${dataEmail}
     
-    ## License
+## License
     
-    ## Contributing
+## Contributing
     
     ${dataContribute}
 `;
