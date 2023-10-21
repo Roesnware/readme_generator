@@ -2,21 +2,33 @@
 
     ## Description
     
-    I want to create a program to generate a README file for my projects from cmd line instead of haivntgg 
-    TO generate a quiality README file from cmd line off of user data
-    I learned node.js in this project
+    I want to create a program that takes input from a developer and actually makes a quality README.md file using that data in cmd line.
+    This program allows users the ability to make a good quality README from commmand line without having to make the file themselves and stress over markdown syntax.
+    I learned markdown syntax tricks, aswell as how to work with node.js.
+
+    ## Table of Contents
+
+    - [Usage](#usage)
+    - [Installation](#installation)
+    - [Test](#test)
+    - [Report](#report)
+    - [Questions](#questions)
+    - [License](#license)
+    - [Contributing](#contributing)
+
+    ## Usage
     
+    Users can use this app by installing the required packages such as inquirer and fs, and then run the index file using node.
+
     ## Installation
     
     npm i, node index.js
-    
-    ## Usage
-    
-    Users can install the required packages and run with node.js 
 
-    ## Report bugs
+    ## Test 
 
-    There are no bugs, the code is perfect
+    ## Report
+
+    To report issues please refer to my contact section.
 
     ## Questions
 
@@ -26,4 +38,4 @@
     
     ## Contributing
     
-    Open source
+    To make contributions please reach out to me on Github or by Email.
