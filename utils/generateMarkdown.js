@@ -50,6 +50,7 @@ function generateMarkdown(data) {
         learn: dataLearn,
         use: dataUse,
         install: dataInstall,
+        test: dataTest,
         report: dataReport,
         contribute: dataContribute,
         github: dataGithub,
@@ -83,6 +84,8 @@ function generateMarkdown(data) {
     ${dataInstall}
 
 ## Test 
+
+    ${dataTest}
 
 ## Report
 
