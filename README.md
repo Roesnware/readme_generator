@@ -7,13 +7,13 @@
 
 ## Table of Contents
 
-    - [Usage](#usage)
-    - [Installation](#installation)
-    - [Test](#test)
-    - [Report](#report)
-    - [Questions](#questions)
-    - [License](#license)
-    - [Contributing](#contributing)
+- [Usage](#usage)
+- [Installation](#installation)
+- [Test](#test)
+- [Report](#report)
+- [Questions](#questions)
+- [License](#license)
+- [Contributing](#contributing)
 
 ## Usage
     
