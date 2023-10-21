@@ -54,10 +54,12 @@ function generateMarkdown(data) {
         use: dataUse,
         install: dataInstall,
         report: dataReport,
-        contribute: dataContribute
+        contribute: dataContribute,
+        github: dataGithub,
+        email: dataEmail
         } = data;
 
-    let lic = renderLicenseSection(license);
+    //let lic = renderLicenseSection(license);
 
     // return string of data for readme
     return `# ${dataTitle}
@@ -79,10 +81,12 @@ function generateMarkdown(data) {
     ## Report bugs
 
     ${dataReport}
+
+    ## Questions
+
+    Contact me for any additional questions: Github- ${dataGithub} Email- ${dataEmail}
     
     ## License
-    
-    ${lic}
     
     ## How to Contribute
     
