@@ -59,8 +59,6 @@ function generateMarkdown(data) {
         email: dataEmail
         } = data;
 
-    //let lic = renderLicenseSection(license);
-
     // return string of data for readme
     return `# ${dataTitle}
 
@@ -72,21 +70,21 @@ function generateMarkdown(data) {
 
     ## Table of Contents
 
-    - [Installation](#installation)
     - [Usage](#usage)
+    - [Installation](#installation)
     - [Test](#test)
     - [Report](#report)
     - [Questions](#questions)
     - [License](#license)
     - [Contributing](#contributing)
 
-    ## Installation
-    
-    ${dataInstall}
-    
     ## Usage
     
     ${dataUse}
+
+    ## Installation
+    
+    ${dataInstall}
 
     ## Test 
 
