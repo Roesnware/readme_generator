@@ -92,8 +92,12 @@ function init() {
             // build data
             let data = MarkdownGenerator(input);
 
+            // folder and file anme 
+            let folder = "output";
+            let file = "README.md"
+
             // call write func
-            writeToFile("README.md", data);
+            writeToFile(`./${folder}/${file}`, data);
         });
 }
 
