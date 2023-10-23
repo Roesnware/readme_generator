@@ -10,6 +10,7 @@
 - [Usage](#usage)
 - [Installation](#installation)
 - [Test](#test)
+- [Demo](#demo)
 - [Report](#report)
 - [Questions](#questions)
 - [License](#license)
@@ -23,9 +24,10 @@
     
     npm i, node index.js
 
-## Test 
+## Demo 
 
-    look above
+![demo1](demo1.mp4)
+![demo2](demo2.mp4)
 
 ## Report
 
