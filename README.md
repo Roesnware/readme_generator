@@ -25,6 +25,8 @@
 
 ## Test 
 
+    look above
+
 ## Report
 
     To report issues please refer to my contact section.
@@ -34,6 +36,8 @@
     Contact me for any additional questions: Github- Roesnware Email- bubwub04@gmail.com
     
 ## License
+
+    [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
     
 ## Contributing
     

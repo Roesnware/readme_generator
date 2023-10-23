@@ -6,6 +6,8 @@ const MarkdownGenerator = require("./utils/generateMarkdown")
 // TODO: Create an array of questions for user input
 const questions = ["What is the title of your app", "Project pitch:", "What is this app is for?", "What did you learn in this project?", "How do users use the app?", "How do users install it?", "How can users test this?", "How can users report issues?", "How can other devs make contributions?", "What is your github username?", "What is your email?"];
 
+const licenseList = ["MIT", "Eclipse Public License 1.0", "Mozilla Public License 2.0", "ISC"];
+
 // TODO: Create a function to write README file
 function writeToFile(fileName, data) {
     // make a file from input 
@@ -74,6 +76,12 @@ function init() {
                 type: 'input',
                 message: questions[10],
                 name: 'email',
+            },
+            {
+                type: 'list',
+                message: 'Which license did you use?',
+                choices: licenseList,
+                name: 'license'
             }
         ])
         .then((response) => {
