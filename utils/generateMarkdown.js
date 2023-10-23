@@ -115,7 +115,7 @@ function generateMarkdown(data) {
     
 ## License
 
-    ${lic}
+${lic}
     
 ## Contributing
     
